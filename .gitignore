@@ -1,2 +1,4 @@
 node_modulessendgrid.env
 node_modules
+server.cert
+server.key

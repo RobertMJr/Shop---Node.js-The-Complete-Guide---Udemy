@@ -41,9 +41,9 @@ const store = new MongoDBStore({
 });
 // Create csrf middleware
 const csrfProtection = csrf();
-// Read in my files for the ssl server
-const privateKey = fs.readFileSync('server.key');
-const certificate = fs.readFileSync('server.cert');
+// Read in my files for the local ssl server
+// const privateKey = fs.readFileSync('server.key');
+// const certificate = fs.readFileSync('server.cert');
 // To be used by multer - handles the destination for the files and their names
 const fileStorage = multer.diskStorage({
 	destination: (req, file, cb) => {
