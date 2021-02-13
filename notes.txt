@@ -1,5 +1,0 @@
-In this module (20) we were trying to extract an image from the request's body but the app.use(bodyParser.urlencoded({ extended: true }));
-does not work since bodyParser is urlencoded parser meaning it can only handle text values sent via the form and files are not text but binary data
-
-Multer is another third party package that parses incoming requests for files and texts
-Install it via: npm install --save multer
